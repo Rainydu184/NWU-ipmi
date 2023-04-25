@@ -71,3 +71,5 @@
 * [IDM](https://www.internetdownloadmanager.com/) : 下载管理器，可以集成在浏览器中，支持动态分段下载。
 
 * [kfb文件转svs(windows)](https://github.com/WilmerWang/SLFCD/releases/tag/0.0.1) : 官方工具，可以结合脚本实现批文件转换。
+
+* [APEX](https://github.com/NVIDIA/apex) :  这是一个NVIDIA的官方工具， 它提供一些工具和技术加速模型的训练，或者使用FP16精度来计算模型从而降低显存消耗。首先需要判断[显卡是否支持FP16](https://blog.csdn.net/u011119817/article/details/120055088), 然后[安装官方工具](https://zhuanlan.zhihu.com/p/320402663)。该工具对python、pytorch、cuda、cudnn的版本都有要求，且安装会碰到各种棘手问题。
