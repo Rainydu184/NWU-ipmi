@@ -2,6 +2,41 @@
 
 ## 服务器使用手册
 
+### Linux 常用命令
+
+* 路径 cd ls
+
+* 文件：mkdir touch cat vim
+* 权限： chmod  chown
+* 查看显卡使用情况： nvidia-smi 、watch -n 1 nvidia-smi（实时监控显卡状态）
+* [详细]([Linux 命令大全 | 菜鸟教程 (runoob.com)](https://www.runoob.com/linux/linux-command-manual.html))
+
+### 安装ubuntu系统
+
+如果拿到学长学姐服务器，安装系统前务必询问学长学姐是否有资料需要保存，及时机器目前处于无法开机状态，也可以使用试用模式保存硬盘文件。
+
+需要准备：4G以上u盘、[ubuntu镜像安装包](https://cn.ubuntu.com/download/server/step1)、[软碟通](https://cn.ultraiso.net/xiazai.html)
+
+流程：下载ubuntu镜像安装包(推荐非最新版本)——>使用软碟通制作启动U盘——>在主机中安装 [安装参考](https://www.zhihu.com/tardis/zm/art/379049774?source_id=1005)
+
+### 安装驱动
+
+* 为什么安装好的驱动，某次重启后就掉了？
+
+安装好驱动后需要固定ubuntu的内核版本，否则使用apt update会自动升级内核，导致内核和驱动版本不匹配。[内核固定方法参考](https://blog.csdn.net/maohule/article/details/107370788)
+
+* 为什么安装好驱动后，什么都没有运行，使用nvidia-smi却看到有进程占用显存？
+
+如果没有打开核显输出，并正确配合显示输出和安装驱动，就会使用独显显示输出。这样会在跑大型模型时出现显示时延变大，图形化界面死机的情况。正确安装驱动流程大致为：完全卸载原有驱动——> 进入tty命令行界面并关闭图形化显示服务——>使用下载好的[安装包](https://www.nvidia.cn/Download/index.aspx?lang=cn)（推荐）或ppa仓库安装驱动——>配置显示器输出，最后重启。[具体方法参考](https://gist.github.com/wangruohui/bc7b9f424e3d5deb0c0b8bba990b1bc5) [关闭图形化界面参考](https://www.jianshu.com/p/36dcf5185f01))
+
+### ssh远程使用服务器
+
+使用公共服务器，多人无法同时使用向日葵远程桌面，所以需要用到ssh。
+
+使用流程：在ubuntu主机中安装好anaconda（[安装参考及使用教程](https://blog.csdn.net/m0_50117360/article/details/108403586)），创建需要使用的虚拟环境——>在自己电脑上安装Pycharm**专业版**配置ssh连接使用服务器[参考教程](https://blog.csdn.net/sdkjkfk/article/details/108202094))。
+
+
+
 
 
 ## 学习路线
@@ -22,7 +57,17 @@
 
 
 
+
+
+
+
 ## 实用工具
 
+优秀可靠的工具一定不是免费的，付费使用工具一定是最便捷可靠的方法。
 
+* [clash](https://github.com/Dreamacro/clash) : This is a powerful scientific internet tool that requires subscription purchased on other platforms. By importing the subscription into the tool, you can achieve scientific internet access. It has a traffic detection function. If you access external websites, it will use a proxy. By default, it will not use a proxy to access domestic websites such as Baidu. This is where it is superior to v2ray and shadowrocket. In fact, you don't need to understand how it works, just use it simply. [Thunder](https://58sd.net/#/knowledge) is a proxy purchasing platform that I often use. Although I have put its tutorial here, it is not my recommendation to you, because there must be cheaper, more stable and faster platforms. If you find any, please open an issue and let me know. Thanks.
+* [chatgpt](https://chat.openai.com/) : 无需多言。 [注册使用教程](https://www.youtube.com/watch?v=NWJeRBMpsx8)
+* [typore](https://typora.io/) ：这是一款好用的Markdown和latex写作工具，支持导出word,pdf等各种格式。[markdown基本语法教程](https://markdown.com.cn/basic-syntax/) [latex公式手册](https://www.cnblogs.com/1024th/p/11623258.html)
+* [IDM](https://www.internetdownloadmanager.com/) : 下载管理器，可以集成在浏览器中，支持动态分段下载。
 
+* [kfb文件转svs(windows)](https://github.com/WilmerWang/SLFCD/releases/tag/0.0.1) : 官方工具，可以结合脚本实现批文件转换。
