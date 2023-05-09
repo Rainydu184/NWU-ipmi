@@ -45,6 +45,7 @@
 
 | 内容            | 学习参考                                                     | 备注                                     |
 | --------------- | ------------------------------------------------------------ | ---------------------------------------- |
+| 常用指标        | [ROC,AUC](https://www.bilibili.com/video/BV1wz4y197LU/?spm_id_from=333.788.recommend_more_video.-1&vd_source=a589ab38fbe0cdb7bab7ac68fb414f0a)   [Acc, Precision,Recall,F1](https://www.bilibili.com/video/BV1vt4y117Zz/?spm_id_from=333.999.0.0&vd_source=a589ab38fbe0cdb7bab7ac68fb414f0a) | 言简意赅，清晰明了                       |
 | Inception_v3    | 文献： [Rethinking the Inception Architecture for Computer Vision.](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Szegedy_Rethinking_the_Inception_CVPR_2016_paper.pdf) | GoogLeNet的主要网络结构                  |
 | DeepLabv3       | 文献：[Rethinking Atrous Convolution for Semantic Image Segmentation.](https://arxiv.org/abs/1706.05587)  [b站霹雳吧啦Wz.](https://www.bilibili.com/video/BV1Jb4y1q7j7/?spm_id_from=333.337.search-card.all.click&vd_source=a589ab38fbe0cdb7bab7ac68fb414f0a) |                                          |
 | YOLOv1-v3       | [b站同济子豪兄. YOLOv1 YOLOv2 ](https://space.bilibili.com/1900783) | YOLO系列学习建议学完v1直接学v7           |
@@ -56,8 +57,6 @@
 | GNN             | [GNN](https://www.bilibili.com/video/BV1iT4y1d7zP/?spm_id_from=333.337.search-card.all.click)、[GCN](https://www.bilibili.com/video/BV18U4y1x7gi/?spm_id_from=333.337.search-card.all.click) | 关于GNN/GCN的基础知识                    |
 | nnU-Net         | [b站](https://www.bilibili.com/video/BV1iN411d7wz/?spm_id_from=333.337.search-card.all.click&vd_source=a589ab38fbe0cdb7bab7ac68fb414f0a) | 别人的论文汇报和大佬的追问               |
 | P2PNet          | [论文解读1](https://www.jiqizhixin.com/articles/2021-10-05-9)、[论文解读2](https://zhuanlan.zhihu.com/p/443685614) |                                          |
-
-
 
 
 
