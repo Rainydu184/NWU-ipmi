@@ -89,3 +89,5 @@ linux下的硬盘使用与windows使用硬盘逻辑区别很大。首先默认�
 * [APEX](https://github.com/NVIDIA/apex) :  这是一个NVIDIA的官方工具， 它提供一些工具和技术加速模型的训练，或者使用FP16精度来计算模型从而降低显存消耗。首先需要判断[显卡是否支持FP16](https://blog.csdn.net/u011119817/article/details/120055088), 然后[安装官方工具](https://zhuanlan.zhihu.com/p/320402663)。该工具对python、pytorch、cuda、cudnn的版本都有要求，且安装会碰到各种棘手问题。
 
 * [rsync](https://www.ruanyifeng.com/blog/2020/08/rsync.html): 这是一个用于在服务器与服务器之间传输数据的工具，在校园网内网中主机间传输可达100M/s。
+
+* [WSL](https://learn.microsoft.com/zh-cn/windows/wsl/install): 这个一个可以在windows运行linux的windows官方开源工具，配合rsync可以与同一网段的内网快速传输文件。
